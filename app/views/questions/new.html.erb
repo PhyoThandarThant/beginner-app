@@ -1,0 +1,15 @@
+<%= form_with(model: @question, local: true) do |f| %>
+    <div>
+        <%= f.label :title, "タイトル" %><br>
+         <%= f.text_field :title %>
+    </div>
+    <div>
+        <%= f.label :body, "本文" %><br>
+        <%= f.text_area :body %><br>
+    </div>
+    <%= f.submit %>
+<% end %>
+<div>
+    <%= @test %>
+</div>
+
